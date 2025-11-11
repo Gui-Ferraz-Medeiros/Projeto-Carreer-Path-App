@@ -1,5 +1,5 @@
 # Carreer Path App
-Projeto desenvolvido para a disciplina de **Pensamento Computacional e Automação com Python**  para auxiliar pessoas que não necessariamente sejam da área de TI a encontrarem novos caminhos em busca de profissões futuras. A aplicação tem o intuito de expandir horizontes e talvez inspirar aqueles que possuem receio com a evolução das tecnologias e como elas afetam seu trabalho, o objetivo é expandir o leque de opções de emprego, e njamais limitá-las.
+Projeto desenvolvido para a disciplina de **Pensamento Computacional e Automação com Python**  para auxiliar pessoas que não necessariamente sejam da área de TI a encontrarem novos caminhos em busca de profissões futuras. A aplicação tem o intuito de expandir horizontes e talvez inspirar aqueles que possuem receio com a evolução das tecnologias e como elas afetam seu trabalho, o objetivo é expandir o leque de opções de emprego, e jamais limitá-las.
 Professor: **Alexandre Russi Jr.**
 Curso: **Ciência da Computação**
 
