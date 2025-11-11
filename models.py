@@ -17,7 +17,7 @@ class Perfil:
     def calcular_media(self):
         if not self.competencias: # Se não houver nenhuma competência, retorna 0 
             return 0
-        total = sum([c.nota for c in self.competencias]) # "c" é cada competência na lista de competências
+        total = sum([c.nota for c in self.competencias]) 
         return total / len(self.competencias)
 
 
@@ -25,3 +25,30 @@ class Carreira:
     def __init__(self, nome, descricao): # Cada carreira tem um nome e uma descrição 
         self.nome = nome
         self.descricao = descricao
+
+class TrilhaAprendizado: # A trilha de aprendizado consiste na previsa de conteúdos para o usuário estudar
+    def __init__(self, nome, conteudos):
+        self.nome = nome
+        self.conteudos = conteudos  
+
+    def exibir_trilha(self):
+        print(f"\nTrilha sugerida: {self.nome}")
+        print("Conteúdos recomendados:")
+        for item in self.conteudos:
+            print(f"- {item}")
+
+
+class SistemaOrientacao:  # Sistema de orientação para organizar múltiplos perfis
+    def __init__(self):
+        self.perfis = [] 
+
+    def adicionar_perfil(self, perfil):
+        self.perfis.append(perfil)
+
+    def listar_perfis(self):
+        if not self.perfis:
+            print("Nenhum perfil cadastrado ainda.")
+        else:
+            print("\nPerfis cadastrados:")
+            for i, p in enumerate(self.perfis, start=1):
+                print(f"{i}. {p.nome}")

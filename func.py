@@ -1,30 +1,49 @@
 # Funções auxiliares do sistema
 
-from models import Carreira
+from models import Carreira, TrilhaAprendizado
 
 def gerar_recomendacao(perfil):
     media = perfil.calcular_media() # Calcula a média das competências contidas no perfil
 
-    # Regras simples baseadas na média de competências
+    # Escolher carreira e trilha com base na média
     if media >= 8:
         carreira = Carreira(
             "Cientista de Dados",
-            "Profissional que analisa grandes volumes de dados para gerar insights estratégicos."
+            "Analisa grandes volumes de dados e cria soluções baseadas em IA."
         )
+        trilha = TrilhaAprendizado(
+            "Trilha de Ciência de Dados",
+            ["Python Avançado", "Estatística", "Machine Learning", "SQL", "Power BI"]
+        )
+
     elif media >= 6:
         carreira = Carreira(
             "Desenvolvedor de Software",
-            "Profissional que cria soluções digitais e sistemas inteligentes."
+            "Cria aplicações e sistemas para diferentes plataformas."
         )
+        trilha = TrilhaAprendizado(
+            "Trilha de Desenvolvimento",
+            ["Lógica de Programação", "Estruturas de Dados", "Banco de Dados", "APIs"]
+        )
+
     elif media >= 4:
         carreira = Carreira(
             "Designer Digital",
-            "Profissional focado em criatividade e experiência do usuário."
+            "Foca na criação de interfaces e experiências visuais."
         )
+        trilha = TrilhaAprendizado(
+            "Trilha de Design e UX",
+            ["Design Thinking", "Figma", "Prototipagem", "Usabilidade"]
+        )
+
     else:
         carreira = Carreira(
             "Assistente de Tecnologia",
-            "Profissional em início de jornada, desenvolvendo competências básicas para o futuro digital."
+            "Profissional iniciante que está aprendendo fundamentos digitais."
+        )
+        trilha = TrilhaAprendizado(
+            "Trilha de Fundamentos",
+            ["Introdução à Informática", "Lógica Básica", "Ferramentas Digitais"]
         )
 
-    return carreira
+    return carreira, trilha
