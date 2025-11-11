@@ -1,6 +1,7 @@
 # Carreer Path App
 Projeto desenvolvido para a disciplina de **Pensamento Computacional e Automação com Python**  para auxiliar pessoas da área de TI na escolha de carreiras futuras.
 Professor: **Alexandre Russi Jr.**
+Curso: **Ciência da Computação**
 
 ## Objetivo:
 O sistema analisa o perfil de competências do usuário e recomenda uma **carreira do futuro** com base nas suas habilidades.  
